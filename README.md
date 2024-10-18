@@ -1,128 +1,246 @@
-# Task Management API
+<p align="center">
+  <img src="https://img.icons8.com/?size=512&id=55494&format=png" width="20%" alt="PROJECT-ROOT-logo">
+</p>
+<p align="center">
+    <h1 align="center">PROJECT-ROOT</h1>
+</p>
+<p align="center">
+    <em><code>❯ REPLACE-ME</code></em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/github/license/fsouoliveira/project-root?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/fsouoliveira/project-root?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/fsouoliveira/project-root?style=flat&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/fsouoliveira/project-root?style=flat&color=0080ff" alt="repo-language-count">
+</p>
+<p align="center">
+		<em>Built with the tools and technologies:</em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" alt="JavaScript">
+	<img src="https://img.shields.io/badge/Nodemon-76D04B.svg?style=flat&logo=Nodemon&logoColor=white" alt="Nodemon">
+	<img src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" alt="JSON">
+	<img src="https://img.shields.io/badge/Express-000000.svg?style=flat&logo=Express&logoColor=white" alt="Express">
+</p>
 
+<br>
 
-## This API allows users to securely manage their tasks using JWT (JSON Web Token)-based authentication. Features include creating, listing, updating, and deleting tasks. The API also provides user registration and login endpoints. The database used is SQLite, and the project follows RESTful API development best practices.
+#####  Table of Contents
 
-## Features
+- [ Overview](#-overview)
+- [ Features](#-features)
+- [ Repository Structure](#-repository-structure)
+- [ Modules](#-modules)
+- [ Getting Started](#-getting-started)
+    - [ Prerequisites](#-prerequisites)
+    - [ Installation](#-installation)
+    - [ Usage](#-usage)
+    - [ Tests](#-tests)
+- [ Project Roadmap](#-project-roadmap)
+- [ Contributing](#-contributing)
+- [ License](#-license)
+- [ Acknowledgments](#-acknowledgments)
 
-**User Registration**: Users can register by providing a username and password.
-**User Authentication**: Users can log in and receive a JWT token to access the API's functionalities.
-**Task Management**: Authenticated users can create, list, update, and delete tasks.
-**Route Protection**: Only authenticated users can access task-related endpoints.
+---
 
-## 🛠 Technologies Used
+##  Overview
 
-**Node.js**: JavaScript runtime platform for server development.
-**Express**: Framework for route creation and HTTP request handling.
-**JWT (jsonwebtoken)**: Token-based authentication for secure access.
-**SQLite3**: Lightweight database for storing tasks and users.
-**Sequelize**: ORM to interact with the database.
-**bcryptjs**: Password hashing for user security.
-**dotenv**: Management of environment variables.
-**Nodemon**: Tool for auto-restarting the server during development.
+<code>❯ REPLACE-ME</code>
 
-## 📁 Project Structure
+---
 
-````bash
-Copiar código
-project-root/
-│
-├── src/
-│   ├── controllers/        # API endpoint logic
-│   ├── models/             # Data models (Tasks and Users)
-│   ├── routes/             # API routes
-│   ├── middlewares/        # JWT authentication middleware
-│   ├── database/           # SQLite database setup and Sequelize configuration
-│   └── app.js              # Main application file
-│
-├── .env                    # Environment variables (e.g., JWT_SECRET)
-├── .gitignore               # Files and folders to be ignored by Git
-├── README.md                # Project documentation
-├── package.json             # Project dependencies and scripts
-└── package-lock.json        # Dependency lockfile
-````
-## 🚀 Setup
+##  Features
 
-## 1. Clone the Repository
-bash
-Copiar código
-git clone https://github.com/your-repository/task-api.git
-cd task-api
+<code>❯ REPLACE-ME</code>
 
-## 2. Install Dependencies
-Run the following command to install all the required dependencies:
+---
 
-bash
-Copiar código
-npm install
+##  Repository Structure
 
-## 3. Configure Environment Variables
-Create a .env file in the root of your project and include the following:
+```sh
+└── project-root/
+    ├── README.md
+    ├── package-lock.json
+    ├── package.json
+    └── src
+        ├── app.js
+        ├── controllers
+        ├── database
+        ├── middlewares
+        ├── models
+        └── routes
+```
 
-makefile
-Copiar código
-PORT=3000
-JWT_SECRET=your_secret_key
-DATABASE_URL=./src/database/tasks.db
+---
 
-## 4. Start the Server
-bash
-Copiar código
-npm start
-By default, the server will run at http://localhost:3000.
+##  Modules
 
-## 🔗 API Endpoints
+<details closed><summary>.</summary>
 
-User Endpoints
-POST /register: Register a new user.
+| File | Summary |
+| --- | --- |
+| [package-lock.json](https://github.com/fsouoliveira/project-root/blob/main/package-lock.json) | <code>❯ REPLACE-ME</code> |
+| [package.json](https://github.com/fsouoliveira/project-root/blob/main/package.json) | <code>❯ REPLACE-ME</code> |
 
-Request body:
+</details>
 
-json
-Copiar código
-{
-  "username": "your_username",
-  "password": "your_password"
-}
-POST /login: Authenticate a user and return a JWT token.
+<details closed><summary>src</summary>
 
-Request body:
+| File | Summary |
+| --- | --- |
+| [app.js](https://github.com/fsouoliveira/project-root/blob/main/src/app.js) | <code>❯ REPLACE-ME</code> |
 
-json
-Copiar código
-{
-  "username": "your_username",
-  "password": "your_password"
-}
-Task Endpoints (Authenticated)
-GET /tasks: List all tasks for the authenticated user.
+</details>
 
-POST /tasks: Create a new task.
+<details closed><summary>src.middlewares</summary>
 
-Request body:
+| File | Summary |
+| --- | --- |
+| [authMiddleware.js](https://github.com/fsouoliveira/project-root/blob/main/src/middlewares/authMiddleware.js) | <code>❯ REPLACE-ME</code> |
 
-json
-Copiar código
-{
-  "title": "Task Title"
-}
-PUT /tasks/
-: Update an existing task.
+</details>
 
-Request body:
+<details closed><summary>src.controllers</summary>
 
-json
-Copiar código
-{
-  "title": "Updated Task Title"
-}
-DELETE /tasks/
-: Delete a task.
+| File | Summary |
+| --- | --- |
+| [UserController.js](https://github.com/fsouoliveira/project-root/blob/main/src/controllers/UserController.js) | <code>❯ REPLACE-ME</code> |
+| [TaskController.js](https://github.com/fsouoliveira/project-root/blob/main/src/controllers/TaskController.js) | <code>❯ REPLACE-ME</code> |
 
-## 🤝 Contributing
+</details>
 
-Feel free to submit issues and pull requests. Any contribution to improving the project is welcome!
+<details closed><summary>src.models</summary>
 
-## 📜 License
+| File | Summary |
+| --- | --- |
+| [TaskModel.js](https://github.com/fsouoliveira/project-root/blob/main/src/models/TaskModel.js) | <code>❯ REPLACE-ME</code> |
+| [UserModel.js](https://github.com/fsouoliveira/project-root/blob/main/src/models/UserModel.js) | <code>❯ REPLACE-ME</code> |
 
-This project is licensed under the MIT License.
+</details>
+
+<details closed><summary>src.routes</summary>
+
+| File | Summary |
+| --- | --- |
+| [userRoutes.js](https://github.com/fsouoliveira/project-root/blob/main/src/routes/userRoutes.js) | <code>❯ REPLACE-ME</code> |
+| [taskRoutes.js](https://github.com/fsouoliveira/project-root/blob/main/src/routes/taskRoutes.js) | <code>❯ REPLACE-ME</code> |
+
+</details>
+
+<details closed><summary>src.database</summary>
+
+| File | Summary |
+| --- | --- |
+| [database.js](https://github.com/fsouoliveira/project-root/blob/main/src/database/database.js) | <code>❯ REPLACE-ME</code> |
+
+</details>
+
+---
+
+##  Getting Started
+
+###  Prerequisites
+
+**JavaScript**: `version x.y.z`
+
+###  Installation
+
+Build the project from source:
+
+1. Clone the project-root repository:
+```sh
+❯ git clone https://github.com/fsouoliveira/project-root
+```
+
+2. Navigate to the project directory:
+```sh
+❯ cd project-root
+```
+
+3. Install the required dependencies:
+```sh
+❯ npm install
+```
+
+###  Usage
+
+To run the project, execute the following command:
+
+```sh
+❯ node app.js
+```
+
+###  Tests
+
+Execute the test suite using the following command:
+
+```sh
+❯ npm test
+```
+
+---
+
+##  Project Roadmap
+
+- [X] **`Task 1`**: <strike>Implement feature one.</strike>
+- [ ] **`Task 2`**: Implement feature two.
+- [ ] **`Task 3`**: Implement feature three.
+
+---
+
+##  Contributing
+
+Contributions are welcome! Here are several ways you can contribute:
+
+- **[Report Issues](https://github.com/fsouoliveira/project-root/issues)**: Submit bugs found or log feature requests for the `project-root` project.
+- **[Submit Pull Requests](https://github.com/fsouoliveira/project-root/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/fsouoliveira/project-root/discussions)**: Share your insights, provide feedback, or ask questions.
+
+<details closed>
+<summary>Contributing Guidelines</summary>
+
+1. **Fork the Repository**: Start by forking the project repository to your github account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
+   ```sh
+   git clone https://github.com/fsouoliveira/project-root
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to github**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
+</details>
+
+<details closed>
+<summary>Contributor Graph</summary>
+<br>
+<p align="left">
+   <a href="https://github.com{/fsouoliveira/project-root/}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=fsouoliveira/project-root">
+   </a>
+</p>
+</details>
+
+---
+
+##  License
+
+This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+
+---
+
+##  Acknowledgments
+
+- List any resources, contributors, inspiration, etc. here.
+
+---
