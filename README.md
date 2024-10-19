@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="https://img.icons8.com/?size=512&id=55494&format=png" width="20%" alt="PROJECT-ROOT-logo">
-</p>
+
 <p align="center">
     <h1 align="center">PROJECT-ROOT</h1>
 </p>
